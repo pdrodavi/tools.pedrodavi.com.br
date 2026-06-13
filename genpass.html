@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gerador de Senha | Tools | Pedro Davi</title>
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row center">
+
+			<div class="col s12"><br><br>
+				<h4><strong>Gerador de Senha</strong></h4>
+			</div>
+
+			<div class="row center">
+				<div class="col s12">
+					<div class="settings">
+						<div class="settings">
+							<div class="input-field center col8">
+								<input placeholder="Tamanho da senha 4 a 20" id="length" type="number" class="validate center" min='4'
+									max='20' value='20'>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12">
+				<div class="settings">
+					<div class="settings">
+						<p>
+							<label>
+								<input type="checkbox" id="numbers" class="filled-in" checked="checked" />
+								<span>Números</span>
+							</label>
+						</p>
+					</div>
+
+					<div class="settings">
+						<p>
+							<label>
+								<input type="checkbox" id="symbols" class="filled-in" checked="checked" />
+								<span>Simbolos</span>
+							</label>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col s12">
+				<div class="settings">
+
+					<div class="settings">
+						<p>
+							<label>
+								<input type="checkbox" id="uppercase" class="filled-in" checked="checked" />
+								<span>Letras maiúsculas</span>
+							</label>
+						</p>
+					</div>
+
+					<div class="settings">
+						<p>
+							<label>
+								<input type="checkbox" id="lowercase" class="filled-in" checked="checked" />
+								<span>Letras minúsculas</span>
+							</label>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col s12"><br>
+				<button class="btn waves-effect waves-light" id="generate">Gerar Senha
+					<i class="material-icons right">send</i>
+				</button>
+			</div>
+
+		</div>
+
+		<div class="row center">
+			<div class="col s12">
+				<div class="result-container">
+					<h5 id="result" class="red-text"></h5>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/genpass.js"></script>
+</body>
+
+</html>
